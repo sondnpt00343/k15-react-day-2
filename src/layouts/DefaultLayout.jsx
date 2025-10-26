@@ -6,7 +6,11 @@ function DefaultLayout() {
     return (
         <div>
             <Header />
-            <main>
+            <main
+                style={{
+                    minHeight: "100vh",
+                }}
+            >
                 <Outlet />
             </main>
             <footer>

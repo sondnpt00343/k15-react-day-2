@@ -1,3 +1,4 @@
+import paths from "@/configs/paths";
 import { NavLink } from "react-router";
 
 const handleActive = ({ isActive }) => ({
@@ -7,23 +8,23 @@ const handleActive = ({ isActive }) => ({
 
 const items = [
     {
-        path: "/",
+        path: paths.home,
         title: "Home",
     },
     {
-        path: "/news",
+        path: paths.news,
         title: "News",
     },
     {
-        path: "/contact",
+        path: paths.contact,
         title: "Contact",
     },
     {
-        path: "/login",
+        path: paths.login,
         title: "Login",
     },
     {
-        path: "/register",
+        path: paths.register,
         title: "Register",
     },
 ];
@@ -31,7 +32,13 @@ const items = [
 function Navigation() {
     return (
         <nav>
-            <ul>
+            <ul
+                style={{
+                    display: "flex",
+                    gap: 20,
+                    listStyle: "none",
+                }}
+            >
                 {items.map((item, index) => (
                     <li key={index}>
                         <NavLink style={handleActive} to={item.path}>
