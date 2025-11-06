@@ -8,6 +8,7 @@ const paths = {
     term: "/term",
     todo: "/todo",
     products: "/products",
+    previewAvatar: "/preview-avatar",
     notFound: "*",
 };
 

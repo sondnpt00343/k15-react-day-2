@@ -13,6 +13,7 @@ import paths from "./configs/paths";
 import Term from "./pages/Term";
 import Todo from "./pages/Todo";
 import Products from "./pages/Products";
+import PreviewAvatar from "./pages/PreviewAvatar";
 
 const routes = [
     {
@@ -21,6 +22,7 @@ const routes = [
             { path: paths.home, component: Home },
             { path: paths.news, component: News },
             { path: paths.products, component: Products },
+            { path: paths.previewAvatar, component: PreviewAvatar },
         ],
     },
     {
