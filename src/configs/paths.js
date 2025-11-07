@@ -9,6 +9,8 @@ const paths = {
     todo: "/todo",
     products: "/products",
     previewAvatar: "/preview-avatar",
+    useRef: "/use-ref",
+    reactMemo: "/react-memo",
     notFound: "*",
 };
 

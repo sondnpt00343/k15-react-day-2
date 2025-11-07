@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const styles = {
     avatar: {
@@ -15,8 +15,17 @@ function PreviewAvatar() {
     const [avatarUrl, setAvatarUrl] = useState("");
 
     const handleChange = (e) => {
-        setAvatarUrl(URL.createObjectURL(e.target.files[0]));
+        const file = e.target.files[0];
+        if (!file) return;
+
+        setAvatarUrl(URL.createObjectURL(file));
     };
+
+    useEffect(() => {
+        return () => {
+            URL.revokeObjectURL(avatarUrl);
+        };
+    }, [avatarUrl]);
 
     return (
         <div>

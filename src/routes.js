@@ -14,6 +14,8 @@ import Term from "./pages/Term";
 import Todo from "./pages/Todo";
 import Products from "./pages/Products";
 import PreviewAvatar from "./pages/PreviewAvatar";
+import UseRef from "./pages/UseRef";
+import ReactMemo from "./pages/ReactMemo";
 
 const routes = [
     {
@@ -23,6 +25,8 @@ const routes = [
             { path: paths.news, component: News },
             { path: paths.products, component: Products },
             { path: paths.previewAvatar, component: PreviewAvatar },
+            { path: paths.useRef, component: UseRef },
+            { path: paths.reactMemo, component: ReactMemo },
         ],
     },
     {
