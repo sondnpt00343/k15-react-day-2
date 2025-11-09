@@ -11,6 +11,9 @@ const paths = {
     previewAvatar: "/preview-avatar",
     useRef: "/use-ref",
     reactMemo: "/react-memo",
+    useState: "/use-state",
+    useMemo: "/use-memo",
+    useContext: "/use-context",
     notFound: "*",
 };
 
