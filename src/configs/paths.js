@@ -14,6 +14,7 @@ const paths = {
     useState: "/use-state",
     useMemo: "/use-memo",
     useContext: "/use-context",
+    useReducer: "/use-reducer",
     notFound: "*",
 };
 

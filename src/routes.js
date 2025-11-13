@@ -19,6 +19,7 @@ import ReactMemo from "./pages/ReactMemo";
 import UseState from "./pages/UseState";
 import UseMemo from "./pages/UseMemo";
 import UseContext from "./pages/UseContext";
+import UseReducer from "./pages/UseReducer";
 
 const routes = [
     {
@@ -33,6 +34,7 @@ const routes = [
             { path: paths.useState, component: UseState },
             { path: paths.useMemo, component: UseMemo },
             { path: paths.useContext, component: UseContext },
+            { path: paths.useReducer, component: UseReducer },
         ],
     },
     {

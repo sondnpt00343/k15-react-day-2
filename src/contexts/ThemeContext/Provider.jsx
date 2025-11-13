@@ -5,8 +5,6 @@ import ThemeContext from "./Context";
 const Provider = ({ children }) => {
     const [theme, setTheme] = useState("light");
 
-    console.log("re-render");
-
     const values = {
         theme,
         toggle() {
