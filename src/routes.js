@@ -20,6 +20,7 @@ import UseState from "./pages/UseState";
 import UseMemo from "./pages/UseMemo";
 import UseContext from "./pages/UseContext";
 import UseReducer from "./pages/UseReducer";
+import Redux from "./pages/Redux";
 
 const routes = [
     {
@@ -35,6 +36,7 @@ const routes = [
             { path: paths.useMemo, component: UseMemo },
             { path: paths.useContext, component: UseContext },
             { path: paths.useReducer, component: UseReducer },
+            { path: paths.redux, component: Redux },
         ],
     },
     {

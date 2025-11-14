@@ -1,11 +1,15 @@
 // import React from "react";
 import ReactDOM from "react-dom/client";
+import { Provider as ReduxProvider } from "@/libs/react-redux";
+import { ThemeProvider } from "./contexts/ThemeContext";
+import store from "./store";
 import App from "./App";
 import "./index.css";
-import { ThemeProvider } from "./contexts/ThemeContext";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
     <ThemeProvider>
-        <App />
+        <ReduxProvider store={store}>
+            <App />
+        </ReduxProvider>
     </ThemeProvider>
 );
