@@ -27,7 +27,7 @@ const routes = [
         layout: DefaultLayout,
         children: [
             { path: paths.home, component: Home },
-            { path: paths.news, component: News },
+            { path: paths.news, component: News, private: true },
             { path: paths.products, component: Products },
             { path: paths.previewAvatar, component: PreviewAvatar },
             { path: paths.useRef, component: UseRef },

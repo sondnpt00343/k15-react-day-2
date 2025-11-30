@@ -1,5 +1,8 @@
 import { Route, BrowserRouter as Router, Routes } from "react-router";
+
+import PrivateRoute from "./components/PrivateRoute";
 import routes from "./routes";
+import { Fragment } from "react";
 
 function App() {
     return (
@@ -11,11 +14,18 @@ function App() {
                         <Route key={index} element={<Layout />}>
                             {route.children.map((child, index) => {
                                 const Component = child.component;
+                                const PageWrapper = child.private
+                                    ? PrivateRoute
+                                    : Fragment;
                                 return (
                                     <Route
                                         key={index}
                                         path={child.path}
-                                        element={<Component />}
+                                        element={
+                                            <PageWrapper>
+                                                <Component />
+                                            </PageWrapper>
+                                        }
                                     />
                                 );
                             })}
